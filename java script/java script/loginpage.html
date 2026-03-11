@@ -1,0 +1,28 @@
+<script>
+        const userName = document.getElementById("username");
+        const passWord = document.getElementById("passwrd");
+        const loginBtn = document.getElementById("login");
+        const cancelBtn = document.getElementById("cancel");
+        const resultMessage = document.getElementById("result");
+        let user1 = "lakshmi";
+        let pass1 = "Pass@1234";
+        
+        loginBtn.onclick = function(){
+            let userInput = userName.value;
+            let passInput = passWord.value;
+            if(userInput === "" || passInput === "")
+        {
+            resultMessage.textContent = "Please Enter Username and password";
+        }
+        else if(userInput == user1 && passInput == pass1)
+                resultMessage.textContent = "Login Successful";
+            else
+                resultMessage.textContent = "Login Failed";
+        }
+        cancelBtn.onclick = function()
+        {
+            alert("Login Cancelled");
+        }
+    </script>
+</body>
+</html>
