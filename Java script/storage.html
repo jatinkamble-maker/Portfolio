@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        localStorage.setItem("name","Jatin");
+        localStorage.setItem("id",JSON.stringify(1234));
+        localStorage.setItem("city","Hyderabad");
+        let products = ["Mobile","TV","Headphones"];
+        localStorage.setItem("product-list",JSON.stringify(products));
+        let student = {
+            name : "Prashanth",
+            rollno : 2510030050,
+            percentage : 8.81,
+        };
+        localStorage.setItem("student-Object",JSON.stringify(student));
+        console.log(localStorage.getItem("name"));
+        console.log(JSON.parse(localStorage.getItem("id")));
+        console.log(JSON.parse(localStorage.getItem("product-list")));
+        console.log(JSON.parse(localStorage.getItem("student-Object")));
+        //remove item
+        localStorage.removeItem("name");
+        localStorage.removeItem("city");
+        localStorage.removeItem("product-list");
+        localStorage.removeItem("student-Object");
+        localStorage.removeItem("id");
+    </script>
+</body>
+</html>

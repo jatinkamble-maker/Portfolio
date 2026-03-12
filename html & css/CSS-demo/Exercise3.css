@@ -1,0 +1,12 @@
+.background{
+    background-image: url(milky-way-8149815_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.text{
+    text-align: center;
+}
+.ul{
+    text-align: center;
+}

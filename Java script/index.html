@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body { 
+        background: linear-gradient(to top,white, lightblue);
+        margin:0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 35px;
+        height: 100vh;
+    }
+    label {
+        font-size: 80px;
+        padding: 10px;
+        margin: 5px;
+    }
+    button { 
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+        width: 80px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: black;
+        background-color: white;
+        transition: all 0.3s ease;
+
+    }
+    button:hover {
+         transform: scale(1.2);
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+         background-color: rgb(196, 247, 196);
+
+    }
+    </style>
+
+</head>
+<body>
+    <h1>Counter</h1>
+    <label id="number">0</label>
+    <div>
+        <button id="rise">Rise</button>
+        <button id="clear">Clear</button>
+        <button id="down">Down</button>
+    </div>
+    <div>
+        <h4 id="message"></h4>
+    </div>
+    <script>
+        const lablevalue = document.getElementById("number");
+        const raisebtn = document.getElementById("rise");
+        const clearbtn = document.getElementById("clear");
+        const downbtn = document.getElementById("down");
+        const message = document.getElementById("message");
+        let count =0;
+        raisebtn.onclick = function() { 
+            count++;
+            lablevalue.textContent = count;
+            message.textContent ="counter incremented";
+        }
+        clearbtn.onclick = function() {
+            count = 0;
+            lablevalue.textContent = count;
+            message.textContent ="counter reset";
+        }
+        downbtn.onclick = function() {
+            count--;
+            lablevalue.textContent = count;
+            message.textContent ="counter decremented";
+        }
+</script>
+</body>
+</html>

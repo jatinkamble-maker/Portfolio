@@ -1,0 +1,17 @@
+.background{
+    background-color: rgb(180, 171, 171);
+    color:black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    text-align: center;
+    background-color: white;
+}
+.img{
+    width: 400px;
+    height: 300px;
+}
