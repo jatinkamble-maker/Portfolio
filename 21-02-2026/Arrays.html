@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = [];
+        student.push("Prashanth");
+        student.push("2510030033");
+        student.push("8.81")
+        student.forEach(function(num){
+            console.log(num);
+        });
+        student.forEach(function(num,index){
+            console.log(index+":"+num);
+        });
+        student.forEach((num) => {
+            console.log(num);
+        });
+        student.forEach((num,index) => {
+            console.log(index+":"+num);
+        });
+        let name = "Prashanth";
+        function print(name){
+            console.log("Hi Hello " +name);
+        }
+        print(name);
+
+        const message = function(){
+            console.log("Welcome");
+        }
+        message();
+        printname = () => {
+            console.log("hello World");
+        }
+        printname();
+    </script>
+</body>
+</html>
