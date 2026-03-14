@@ -3,318 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jatin Kamble | Portfolio</title>
+    <title>Document</title>
+    <style>
+    body { 
+        background: linear-gradient(to top,white, lightblue);
+        margin:0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 35px;
+        height: 100vh;
+    }
+    label {
+        font-size: 80px;
+        padding: 10px;
+        margin: 5px;
+    }
+    button { 
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+        width: 80px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: black;
+        background-color: white;
+        transition: all 0.3s ease;
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    }
+    button:hover {
+         transform: scale(1.2);
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+         background-color: rgb(196, 247, 196);
+
+    }
+    </style>
+
 </head>
 <body>
-
-<!-- NAVBAR -->
-<nav class="navbar">
-    <h2 class="logo">Jatin<span>Kamble</span></h2>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-text">
-        <h1>Hello, I'm <span>Jatin Kamble</span></h1>
-        <p>First Year CSE Student | Learning Web Development & DSA</p>
+    <h1>Counter</h1>
+    <label id="number">0</label>
+    <div>
+        <button id="rise">Rise</button>
+        <button id="clear">Clear</button>
+        <button id="down">Down</button>
     </div>
-
-    <div class="hero-img">
-        <img src="image1.jpg.png" alt="Profile Photo">
+    <div>
+        <h4 id="message"></h4>
     </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-        I am a first-year Computer Science Engineering student at KLH Hyderabad.
-        I am learning web development and enjoy creating small practice projects
-        using HTML, CSS, and JavaScript. I also practice Java and Data Structures
-        to improve my problem-solving skills.
-    </p>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section">
-    <h2>Skills</h2>
-
-    <div class="simple-skills">
-        <div class="skill-item">HTML</div>
-        <div class="skill-item">CSS</div>
-        <div class="skill-item">JavaScript</div>
-        <div class="skill-item">Java</div>
-        <div class="skill-item">Data Structures</div>
-        <div class="skill-item">Problem Solving</div>
-    </div>
-</section>
-
-<!-- SKILLS & PRACTICE FILES -->
-<section class="section">
-    <h2>Skills & Practice Work</h2>
-
-    <div class="work-grid">
-
-        <!-- HTML & CSS -->
-        <div class="work-card">
-            <h3>HTML & CSS</h3>
-            <p>Basic layouts and portfolio practice.</p>
-
-            <button class="view-btn" onclick="toggleFiles('htmlCssFiles')">
-                View Practice Files
-            </button>
-<div class="file-list" id="htmlCssFiles">
-
-<a href="html & css/19-01-2026/ABC.html" target="_blank">
-📄 ABC.html (Basic Page)
-</a>
-
-<a href="html & css/20-01-2026/KLH.html" target="_blank">
-🏫 KLH Page
-</a>
-
-<a href="html & css/20-01-2026/temperature.html" target="_blank">
-🌡 Temperature Converter
-</a>
-
-<a href="html & css/21-01-2026/index.html" target="_blank">
-🎨 Background Image Page
-</a>
-
-<a href="html & css/21-01-2026/msg.html" target="_blank">
-💬 Message UI
-</a>
-
-<a href="html & css/22-01-2026/index.html" target="_blank">
-📄 Layout Practice
-</a>
-
-<a href="html & css/24-01-2026 Media tags/index.html" target="_blank">
-🎥 Media Tags Practice
-</a>
-
-<a href="html & css/28-01-2026/index.html" target="_blank">
-📂 Media + Files Demo
-</a>
-
-<a href="html & css/14-02-2026/index.html" target="_blank">
-🖼 Image Gallery
-</a>
-
-</div>
-        </div>
-
-        <!-- JavaScript -->
-        <div class="work-card">
-            <h3>JavaScript</h3>
-            <p>JavaScript practice programs.</p>
-
-            <button class="view-btn" onclick="toggleFiles('jsFiles')">
-                View Practice Files
-            </button>
-<div class="file-list" id="jsFiles">
-
-<a href="java script/simple calculator.html" target="_blank">
-🧮 simple-calculator.html
-</a>
-
-<a href="java script/age predictor.html" target="_blank">
-🎂 age-predictor.html
-</a>
-
-<a href="java script/student list.html" target="_blank">
-📋 student-list.html
-</a>
-
-<a href="java script/adding dynamica.html" target="_blank">
-➕ add-dynamic.html
-</a>
-
-<a href="java script/student task board.html" target="_blank">
-📌 student-task-board.html
-</a>
-
-<a href="java script/add function.html" target="_blank">
-➕ add-function.html
-</a>
-
-<a href="java script/index.html" target="_blank">
-🔢 counter.html
-</a>
-
-<a href="java script/object.html" target="_blank">
-📦 object.html
-</a>
-
-<a href="java script/storage.html" target="_blank">
-💾 storage.html
-</a>
-
-<a href="java script/Schedulers.html" target="_blank">
-⏱ schedulers.html
-</a>
-
-<a href="java script/clock.html.html" target="_blank">
-🕒 clock.html
-</a>
-
-</div>
-        </div>
-
-        <!-- C -->
-       <div class="work-card">
-    <h3>C</h3>
-    <p>C practice programs.</p>
-
-    <button class="view-btn" onclick="toggleFiles('cFiles')">
-        View Practice Files
-    </button>
-
-    <div class="file-list" id="cFiles">
-        <a href="#" onclick="openCode('c/15.cpp')">🔹 15.cpp</a>
-        <a href="#" onclick="openCode('c/16.cpp')">🔹 16.cpp</a>
-        <a href="#" onclick="openCode('c/functions.c')">🔹 444.c</a>
-        <a href="#" onclick="openCode('c/functions.c')">🔹 pattern 2.c</a>
-        <a href="#" onclick="openCode('c/functions.c')">🔹 pattern 3.c</a>
-        <a href="#" onclick="openCode('c/functions.c')">🔹 pattern.c</a>
-        
-    </div>
-
-    <!-- CODE VIEWER -->
-    <pre class="code-box" id="codeViewer">
-<code></code>
-    </pre>
-</div>
-        <!-- Java -->
-        <div class="work-card">
-            <h3>Java</h3>
-            <p>Core Java practice programs.</p>
-
-            <button class="view-btn" onclick="toggleFiles('javaFiles')">
-                View Practice Files
-            </button>
-
-            <div class="file-list" id="javaFiles">
-
-<a href="java/lms.pdf" target="_blank">
-📘 Library Management System Project
-</a>
-
-</div>
-        </div>
-
-        <!-- DSA -->
-        <div class="work-card">
-            <h3>DSA</h3>
-            <p>Arrays, searching and sorting practice.</p>
-            <a href="dsa/dsa-practice.pdf" target="_blank">View Files</a>
-        </div>
-
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-    <h2>Projects</h2>
-    <!--LMS-->
-
-    <div class="project-grid">
-
-        <div class="project-card">
-            <h3>Library Management System</h3>
-            <p class="project-desc">
-                Console-based Java project using Data Structures for managing books.
-            </p>
-            <div class="project-tags">
-                <span>Java</span>
-                <span>DSA</span>
-            </div>
-            
-            <div class="project-links">
-                <a href="LMS.html" target="_blank">View Project</a>
-            </div>
-        </div>
-
-        <!--AI -->
-
-        <div class="project-card">
-            <h3>AI Road Safety System</h3>
-            <p class="project-desc">
-                AI-based conceptual project for traffic safety analysis.
-            </p>
-            <div class="project-tags">
-                <span>AI</span>
-                <span>ML</span>
-            </div>
-            <div class="project-links">
-                <a href="hackathon.html" target="_blank">View Project</a>
-            </div>
-        </div>
-
-        <!--WEB-->
-
-        <div class="project-card">
-            <h3>Web Development </h3>
-            <p class="project-desc">
-                Beginner-friendly web projects using HTML, CSS and JS.
-            </p>
-            <div class="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JS</span>
-            </div>
-            <div class="project-links">
-                <a href="index.html" target="_blank">View Output</a>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-
-<h2>Contact Me</h2>
-
-<div class="social-icons">
-
-<a href="https://github.com/jatinkamble-maker/Portfolio" target="_blank">
-<img src="github.png" alt="GitHub">
-</a>
-
-<a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">
-<img src="linkdin.svg" alt="LinkedIn">
-</a>
-
-<a href="https://www.codechef.com/users/labor_shine_83" target="_blank">
-<img src="codechef.jpeg" alt="CodeChef">
-</a>
-
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <p>© 2026 Jatin Kamble</p>
-</footer>
-
-<script>
-function toggleFiles(id) {
-    const box = document.getElementById(id);
-    box.style.display = box.style.display === "block" ? "none" : "block";
-}
+    <script>
+        const lablevalue = document.getElementById("number");
+        const raisebtn = document.getElementById("rise");
+        const clearbtn = document.getElementById("clear");
+        const downbtn = document.getElementById("down");
+        const message = document.getElementById("message");
+        let count =0;
+        raisebtn.onclick = function() { 
+            count++;
+            lablevalue.textContent = count;
+            message.textContent ="counter incremented";
+        }
+        clearbtn.onclick = function() {
+            count = 0;
+            lablevalue.textContent = count;
+            message.textContent ="counter reset";
+        }
+        downbtn.onclick = function() {
+            count--;
+            lablevalue.textContent = count;
+            message.textContent ="counter decremented";
+        }
 </script>
-
 </body>
 </html>
