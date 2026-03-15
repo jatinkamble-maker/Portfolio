@@ -1,0 +1,49 @@
+.container{
+    align-items: center;
+}
+.img{
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: left;
+}
+.biryani{
+    display: flex;
+    border-radius: 20px;
+    width: 700px;
+    height: 150px;
+    margin-left: 400px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.paneer{
+    display: flex;
+    border-radius: 20px;
+    width: 700px;
+    height: 150px;
+    margin-left: 400px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.dosa{
+    display: flex;
+    border-radius: 20px;
+    width: 700px;
+    height: 150px;
+    margin-left: 400px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.text{
+    padding: 10px;
+    margin-right: 10px;
+}
+.c{
+    margin-left: 60px;
+}
+.cost{
+    margin-left: 100px;
+}
+.footer{
+    color: gray;
+}

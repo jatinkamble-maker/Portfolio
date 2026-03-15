@@ -1,0 +1,33 @@
+form{
+    margin: auto;
+    width: 600px;
+    background-color: bisque;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px blueviolet;
+}
+h2{
+    text-align: center;
+    color: #003366;
+}
+body{
+    font-family: Roboto;
+    background: hsl(221, 33%, 75%);
+}
+input,select,textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+label{
+    font-weight: bold;
+}
+button{
+    padding: 10px;
+    margin: 10px;
+    background: #003366;
+    border-radius: 30px;
+    color: whitesmoke;
+    width: 150px;
+    font-size: 20px;
+}
